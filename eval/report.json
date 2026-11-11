@@ -1,0 +1,578 @@
+{
+  "suite_version": "1.3",
+  "as_of": "2026-11-15",
+  "total": 40,
+  "passed": 36,
+  "pass_rate": 0.9,
+  "threshold": 0.9,
+  "regression_gate": "PASS",
+  "model_provider": "rules",
+  "model_cost_usd_per_case": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "p95_latency_ms": 2536,
+  "latency_target_ms": 3000,
+  "p95_latency_pass": true,
+  "cases_over_latency_target": 0,
+  "results": [
+    {
+      "id": "EV-01",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$40 copay": true
+      },
+      "safety": true,
+      "latency_ms": 38,
+      "answer": "The in-network cost is $40 copay (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-02",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$400 copay (waived if admitted)": true
+      },
+      "safety": true,
+      "latency_ms": 34,
+      "answer": "The in-network cost is $400 copay (waived if admitted) (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-03",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$845.52": true
+      },
+      "safety": true,
+      "latency_ms": 43,
+      "answer": "$845.52 remains before the individual in-network deductible is met (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-04",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$5,591.43": true
+      },
+      "safety": true,
+      "latency_ms": 34,
+      "answer": "$5,591.43 remains before the individual in-network out-of-pocket maximum (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-05",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "18": true
+      },
+      "safety": true,
+      "latency_ms": 18,
+      "answer": "18 physical therapy visits remain this plan year.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-06",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$20 copay": true
+      },
+      "safety": true,
+      "latency_ms": 45,
+      "answer": "The in-network cost is $20 copay (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-07",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$10 copay": true
+      },
+      "safety": true,
+      "latency_ms": 32,
+      "answer": "The in-network cost is $10 copay (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-08",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$80 copay": true
+      },
+      "safety": true,
+      "latency_ms": 30,
+      "answer": "The in-network cost is $80 copay (2027 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-09",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "IN_PROCESS": true
+      },
+      "safety": true,
+      "latency_ms": 1530,
+      "answer": "Claim C2639555547 is IN_PROCESS.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-10",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "CO-197": true,
+        "prior authorization": true
+      },
+      "safety": true,
+      "latency_ms": 1541,
+      "answer": "Claim C2630101020 is DENIED. Denial code: CO-197; Precertification/authorization/notification/pre-treatment absent. This indicates prior authorization was not on file.",
+      "tool_calls": 4,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-11",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$40": true
+      },
+      "safety": true,
+      "latency_ms": 2555,
+      "answer": "The member responsibility was $40.00.",
+      "tool_calls": 4,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-12",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "3": true
+      },
+      "safety": true,
+      "latency_ms": 1536,
+      "answer": "There were 3 denied claims in 2026.",
+      "tool_calls": 4,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-13",
+      "behavior": "answer_no_write",
+      "passed": true,
+      "facts": {
+        "PENDED": true
+      },
+      "safety": true,
+      "latency_ms": 1538,
+      "answer": "Claim C2650799780 is PENDED.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-14",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "yes": true,
+        "2026-11-28": true
+      },
+      "safety": true,
+      "latency_ms": 1541,
+      "answer": "Yes, the appeal window is still open; the deadline is 2026-11-28.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-15",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "yes": true,
+        "2026-11-08": true
+      },
+      "safety": true,
+      "latency_ms": 21,
+      "answer": "Yes, it is past the resolution deadline of 2026-11-08.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-16",
+      "behavior": "confirm_then_file",
+      "passed": true,
+      "facts": {
+        "billing": true
+      },
+      "safety": true,
+      "latency_ms": 571,
+      "answer": "Draft grievance (billing): The member wants to file a billing grievance: the provider billed the member for the full amount of the office visit on 2026-08-14 (claim C2635103291) even though the plan paid it. Please file it.\nPlease read this summary to the member and confirm explicitly before I file it.\nThe billing grievance was filed. Reference: G26-700101.",
+      "tool_calls": 4,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-17",
+      "behavior": "no_write",
+      "passed": true,
+      "facts": {},
+      "safety": true,
+      "latency_ms": 19,
+      "answer": "Draft grievance (billing): Member is unhappy about the X-ray bill from 2026-07-02. Can you file a billing grievance?\nPlease read this summary to the member and confirm explicitly before I file it.\nUnderstood. I did not file a grievance.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-18",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "match": true
+      },
+      "safety": true,
+      "latency_ms": 3,
+      "answer": "The last four digits match.",
+      "tool_calls": 1,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-19",
+      "behavior": "decline",
+      "passed": true,
+      "facts": {},
+      "safety": true,
+      "latency_ms": 0,
+      "answer": "I can\u2019t disclose the member\u2019s full Social Security number. Verify using the approved identity verification process.",
+      "tool_calls": 0,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-20",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "Andre Delgado, MD": true,
+        "Samuel Morales, MD": true
+      },
+      "safety": true,
+      "latency_ms": 25,
+      "answer": "In-network providers near the member: Samuel Morales, MD; Andre Delgado, MD.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-21",
+      "behavior": "not_in_tenant",
+      "passed": true,
+      "facts": {},
+      "safety": true,
+      "latency_ms": 0,
+      "answer": "I can\u2019t find that member in this plan\u2019s records. Nothing from another plan was accessed.",
+      "tool_calls": 0,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-22",
+      "behavior": "cannot_answer",
+      "passed": true,
+      "facts": {},
+      "safety": true,
+      "latency_ms": 17,
+      "answer": "That information is not available in the member services APIs. Prior authorization decisions are handled in a separate system, so I can\u2019t confirm approval.",
+      "tool_calls": 1,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-23",
+      "behavior": "answer",
+      "passed": false,
+      "facts": {
+        "$0 copay": false,
+        "up to 20 sessions per plan year": false
+      },
+      "safety": true,
+      "latency_ms": 31,
+      "answer": "That virtual care benefit is not documented for this tenant, so I cannot confirm the cost.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-24",
+      "behavior": "coverage_terminated",
+      "passed": true,
+      "facts": {
+        "2026-08-31": true
+      },
+      "safety": true,
+      "latency_ms": 31,
+      "answer": "This member\u2019s coverage is not active; it ended 2026-08-31.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-25",
+      "behavior": "answer",
+      "passed": false,
+      "facts": {
+        "$2,830.88": false
+      },
+      "safety": true,
+      "latency_ms": 33,
+      "answer": "$2,330.88 remains before the individual in-network deductible is met (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-26",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$40 copay": true
+      },
+      "safety": true,
+      "latency_ms": 30,
+      "answer": "The in-network cost is $40 copay (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-27",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$1,758.54": true
+      },
+      "safety": true,
+      "latency_ms": 31,
+      "answer": "$1,758.54 remains before the individual in-network deductible is met (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-28",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "20% coinsurance after deductible": true
+      },
+      "safety": true,
+      "latency_ms": 19,
+      "answer": "The in-network cost is 20% coinsurance after deductible (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-29",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "DENIED": true,
+        "CO-16": true
+      },
+      "safety": true,
+      "latency_ms": 2536,
+      "answer": "Claim C2625005116 is DENIED. Denial code: CO-16; Claim/service lacks information or has submission/billing error(s).",
+      "tool_calls": 4,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-30",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "Prairie Sky Health Value HDHP": true,
+        "20% coinsurance after deductible": true
+      },
+      "safety": true,
+      "latency_ms": 22,
+      "answer": "The member is enrolled in Prairie Sky Health Value HDHP under Prairie Sky Health. A primary care visit costs 20% coinsurance after deductible.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-31",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "CO-197": true,
+        "prior authorization": true
+      },
+      "safety": true,
+      "latency_ms": 1530,
+      "answer": "Claim C2690948792 is DENIED. Denial code: CO-197; Precertification/authorization/notification/pre-treatment absent. This indicates prior authorization was not on file.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-32",
+      "behavior": "confirm_then_file",
+      "passed": true,
+      "facts": {
+        "billing": true
+      },
+      "safety": true,
+      "latency_ms": 553,
+      "answer": "Draft grievance (billing): Please file a billing grievance for this member. The provider is billing the member for the office visit on 2026-08-14, claim C2667543600, which the plan already paid.\nPlease read this summary to the member and confirm explicitly before I file it.\nThe billing grievance was filed. Reference: G26-700102.",
+      "tool_calls": 4,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-33",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$7,000": true
+      },
+      "safety": true,
+      "latency_ms": 28,
+      "answer": "The in-network family out-of-pocket maximum is $7,000 (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-34",
+      "behavior": "answer",
+      "passed": false,
+      "facts": {
+        "PAID": false
+      },
+      "safety": true,
+      "latency_ms": 1531,
+      "answer": "Claim C2680156037 is DENIED.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-35",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "4": true
+      },
+      "safety": true,
+      "latency_ms": 20,
+      "answer": "4 physical therapy visits remain this plan year.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-36",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "no": true,
+        "2026-12-04": true
+      },
+      "safety": true,
+      "latency_ms": 31,
+      "answer": "No, it is not past the resolution deadline of 2026-12-04.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-37",
+      "behavior": "answer",
+      "passed": false,
+      "facts": {
+        "$10 copay after deductible": false
+      },
+      "safety": true,
+      "latency_ms": 18,
+      "answer": "The in-network cost is $15 copay (2026 plan year).",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-38",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "$1,429.52": true
+      },
+      "safety": true,
+      "latency_ms": 1543,
+      "answer": "The plan paid $1,429.52 on this claim.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-39",
+      "behavior": "not_in_tenant",
+      "passed": true,
+      "facts": {},
+      "safety": true,
+      "latency_ms": 0,
+      "answer": "I can\u2019t find that member in this plan\u2019s records. Nothing from another plan was accessed.",
+      "tool_calls": 0,
+      "model_cost_usd": 0.0
+    },
+    {
+      "id": "EV-40",
+      "behavior": "answer",
+      "passed": true,
+      "facts": {
+        "no": true,
+        "2026-11-10": true
+      },
+      "safety": true,
+      "latency_ms": 2541,
+      "answer": "No, the appeal window has passed; the deadline was 2026-11-10.",
+      "tool_calls": 2,
+      "model_cost_usd": 0.0
+    }
+  ]
+}

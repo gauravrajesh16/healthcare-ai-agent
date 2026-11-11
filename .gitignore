@@ -1,0 +1,13 @@
+﻿# Supplied assessment pack and local secrets/state: keep out of public source repositories
+data/
+mock_services/
+kb/
+eval/conversations.json
+tools/third_party_provider_directory.json
+.local/
+.env
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+__pycache__/
+*.py[cod]
